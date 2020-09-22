@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en" class="color-theme-blue">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#2196f3">
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
+    <title>Fimobile</title>
+    <link rel="stylesheet" href="css/framework7.bundle.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="apple-touch-icon" href="img/Fimobile-icon-square.png">
+    <link rel="icon" href="img/Fimobile-icon.png">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Statusbar overlay element -->
+        <div class="statusbar"></div>
+        <div class="panel panel-left panel-reveal panel-resizable panel-init color-white">
+            <div class="page">
+                <div class="page-content">
+                    <div class="block">
+                        <div class="row ">
+                            <div class="col-auto">
+                                <figure class="avatar avatar-60 border-0"><img src="img/user1.png" alt=""></figure>
+                            </div>
+                            <div class="col pl-0 align-self-center">
+                                <h5 class="my-1">Ammy Jahnson</h5>
+                                <p class="text-mute small mt-1">Work, London, UK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="list links-list nav-list">
+                            <ul>
+                                <li>
+                                    <a href="/homepage/" class="panel-close"><i class="material-icons icons-raised">home</i>Home</a>
+                                </li>
+                                <li>
+                                    <a href="/noticationslist/" class="panel-close"><i class="material-icons icons-raised">notifications</i>Notification <span class="badge color-black ml-2">2</span></a>
+                                </li>
+                                <li>
+                                    <a href="/history/" class="panel-close"><i class="material-icons icons-raised">find_in_page</i>History</a>
+                                </li>
+                                <li>
+                                    <a href="/allpages/" class="panel-close"><i class="material-icons icons-raised">view_quilt<span class="new-notification"></span></i>All Pages</a>
+                                </li>
+                                <li>
+                                    <a href="/setting/" class="panel-close"><i class="material-icons icons-raised">important_devices</i>Settings</a>
+                                </li>
+                                <li>
+                                    <a href="/framework/" class="panel-close"><i class="material-icons icons-raised">pages</i>F7 Controls</a>
+                                </li>
+                                <li>
+                                    <a href="/color-themes/" class="panel-close"><i class="material-icons icons-raised">palette</i>Color Themes</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="list links-list nav-list">
+                            <ul>
+                                <li>
+                                    <a href="/signin/" class="panel-close"><i class="material-icons icons-raised color-danger">power_settings_new</i>Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="closesidemenu link panel-close"><i class="material-icons icons-raised bg-dark ">close</i></a>
+        <div class="view view-main view-init safe-areas" data-master-detail-breakpoint="800" data-url="/">
+            <div class="row no-gutters loader-screen">
+                <div class="col align-self-center text-white text-align-center">
+                    <img src="img/logo.png" alt="logo">
+                    <h1 class="mt-2 mb-0"><span class="font-weight-light">Fi</span>mobile</h1>
+                    <p class="text-mute text-uppercase small mt-1">HTML Template</p>
+                    <div class="laoderhorizontal">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="page page-introduction" data-name="introduction">
+                <div class="page-content">
+                    <!-- Swiper intro -->
+                    <div class="swiper-container swiper-init introduction pt-5" data-pagination='{"el": ".swiper-pagination", "hideOnClick": true}'>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide overflow-hidden text-align-center">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col align-self-center px-3">
+                                            <img src="img/information-graphic1.png" alt="" class="mx-100 my-5">
+                                            <div class="row">
+                                                <div class="col mb-5">
+                                                    <h4>Amazing Finance Corner</h4>
+                                                    <p>Lorem ipsum dolor sit amet, consect etur adipiscing elit. Sndisse conv allis.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide overflow-hidden text-align-center">
+                                <div class="container">
+                                    <div class="row ">
+                                        <div class="col align-self-center px-3">
+                                            <img src="img/infomarmation-graphics2.png" alt="" class="mx-100 my-5">
+                                            <div class="row">
+                                                <div class="col mb-5">
+                                                    <h4>Cross all over the world</h4>
+                                                    <p>Lorem ipsum dolor sit amet, consect etur adipiscing elit. Sndisse conv allis.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide overflow-hidden text-align-center">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col align-self-center px-3">
+                                            <img src="img/infomarmation-graphics3.png" alt="" class="mx-100 my-5">
+                                            <div class="row">
+                                                <div class="col mb-5">
+                                                    <h4>Experience ease of use</h4>
+                                                    <p>Lorem ipsum dolor sit amet, consect etur adipiscing elit. Sndisse conv allis.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <!-- Swiper intro ends -->
+
+                    <!-- login buttons -->
+                    <div class="block bottom-button-container">
+                        <div class="row">
+                            <div class="col">
+                                <a href="/signin/" class="button button-raised button-fill button-large button-round color-default">Login</a>
+                            </div>
+                            <div class="col">
+                                <a href="/signup/" class="button button-raised button-large button-round color-default">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- login buttons -->
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- And add money modal popup-->
+        <div class="popup addmoney">
+            <div class="view">
+                <div class="page">
+                    <div class="navbar">
+                        <div class="navbar-inner">
+                            <div class="right">
+                                <!-- Link to close popup -->
+                                <a class="link popup-close">Close</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-content text-align-center">
+                        <div class="block">
+                            <img src="img/infomarmation-graphics2.png" alt="logo" class="logo-small">
+
+                            <div class="list no-margin bg-none">
+                                <ul class="no-border">
+                                    <li class="item-content item-input no-padding-horizontal">
+                                        <div class="item-inner no-padding-horizontal">
+                                            <!-- "item-floating-label" class on item title -->
+                                            <div class="item-title item-floating-label">Enter amount</div>
+                                            <div class="item-input-wrap">
+                                                <input type="text" name="Enter amount">
+                                                <span class="input-clear-button"></span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="text-mute">You will be redirected to payment gatway to procceed further. Enter amount in USD.</p>
+                            <br>
+                            <button type="button" class="button button-raised button-fill button-large button-round color-default popup-close" data-dismiss="modal">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- And pay money modal popup-->
+        <div class="popup paymoney">
+            <div class="view">
+                <div class="page">
+                    <div class="navbar">
+                        <div class="navbar-inner">
+                            <div class="title">Pay</div>
+                            <div class="right">
+                                <!-- Link to close popup -->
+                                <a class="link popup-close">Close</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-content">
+                        <div class="block">
+                            <div class="list">
+                                <ul>
+                                    <li>
+                                        <label class="item-radio item-content">
+                                            <input type="radio" name="demo-radio" value="bill" />
+                                            <i class="icon icon-radio"></i>
+                                            <div class="item-inner">
+                                                <div class="item-title">To Bill</div>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="item-radio item-content">
+                                            <input type="radio" name="demo-radio" value="person" checked />
+                                            <i class="icon icon-radio"></i>
+                                            <div class="item-inner">
+                                                <div class="item-title">To Person</div>
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card shadow border-0 mb-3">
+                                <div class="card-content card-content-padding">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto pr-0">
+                                            <div class="avatar avatar-50 no-shadow border-0">
+                                                <img src="img/user2.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <h6 class="font-weight-normal mb-1 mt-0">Ms. Shivani Dilux</h6>
+                                            <p class="text-mute small text-secondary mt-1">"Thank you for your purchase with our shop and making online payment."</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list no-margin bg-none">
+                                <ul class="no-border">
+                                    <li class="item-content item-input no-padding-horizontal">
+                                        <div class="item-inner no-padding-horizontal">
+                                            <!-- "item-floating-label" class on item title -->
+                                            <div class="item-title item-floating-label">Enter amount</div>
+                                            <div class="item-input-wrap">
+                                                <input type="text" name="Enter amount">
+                                                <span class="input-clear-button"></span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="text-mute  text-align-center">You will be redirected to payment gatway to procceed further. Enter amount in USD.</p>
+                            <br>
+                            <button type="button" class="button button-raised button-fill button-large button-round color-default popup-close" data-dismiss="modal">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- And send money modal popup-->
+        <div class="popup sendmoney">
+            <div class="view">
+                <div class="page">
+                    <div class="navbar">
+                        <div class="navbar-inner">
+                            <div class="title">Send</div>
+                            <div class="right">
+                                <!-- Link to close popup -->
+                                <a class="link popup-close">Close</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-content">
+                        <div class="block">
+                            <div class="list no-margin bg-none">
+                                <ul class="no-border">
+                                    <li class="item-content item-input no-padding-horizontal item-input-with-value">
+                                        <div class="item-inner no-padding-horizontal">
+                                            <!-- "item-floating-label" class on item title -->
+                                            <div class="item-title item-floating-label">Pay to</div>
+                                            <div class="item-input-wrap">
+                                                <select>
+                                                    <option value="apple" selected>Ms. Shivani Dilux</option>
+                                                    <option value="pineapple">Ajay Mundra</option>
+                                                    <option value="pear">Shivani Shah</option>
+                                                    <option value="orange">William Hanrey</option>
+                                                    <option value="melon">Angelina</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="card shadow border-0 mb-3">
+                                <div class="card-content card-content-padding">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto pr-0">
+                                            <div class="avatar avatar-50 no-shadow border-0">
+                                                <img src="img/user2.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <h6 class="font-weight-normal mb-1 mt-0">Ms. Shivani Dilux</h6>
+                                            <p class="text-mute small text-secondary mt-1">"Thank you for your purchase with our shop and making online payment."</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list no-margin bg-none">
+                                <ul class="no-border">
+                                    <li class="item-content item-input no-padding-horizontal">
+                                        <div class="item-inner no-padding-horizontal">
+                                            <!-- "item-floating-label" class on item title -->
+                                            <div class="item-title item-floating-label">Enter amount</div>
+                                            <div class="item-input-wrap">
+                                                <input type="text" name="Enter amount">
+                                                <span class="input-clear-button"></span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="text-mute  text-align-center">You will be redirected to payment gatway to procceed further. Enter amount in USD.</p>
+                            <br>
+                            <button type="button" class="button button-raised button-fill button-large button-round color-default popup-close" data-dismiss="modal">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- And pay money modal popup-->
+        <div class="popup bookpopup">
+            <div class="view">
+                <div class="page">
+                    <div class="navbar">
+                        <div class="navbar-inner">
+                            <div class="title">Book</div>
+                            <div class="right">
+                                <!-- Link to close popup -->
+                                <a class="link popup-close">Close</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-content">
+                        <div class="block">
+                            <div class="list">
+                                <ul>
+                                    <li>
+                                        <label class="item-radio item-content">
+                                            <input type="radio" name="demo-radio2" value="Flight" />
+                                            <i class="icon icon-radio"></i>
+                                            <div class="item-inner">
+                                                <div class="item-title">To Flight</div>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="item-radio item-content">
+                                            <input type="radio" name="demo-radio2" value="train" checked />
+                                            <i class="icon icon-radio"></i>
+                                            <div class="item-inner">
+                                                <div class="item-title">To Train</div>
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="list no-margin bg-none">
+                                <ul class="no-border">
+                                    <li class="item-content item-input no-padding-horizontal">
+                                        <div class="item-inner no-padding-horizontal">
+                                            <!-- "item-floating-label" class on item title -->
+                                            <div class="item-title item-floating-label">Start Point</div>
+                                            <div class="item-input-wrap">
+                                                <input type="text" name="Enter start point">
+                                                <span class="input-clear-button"></span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item-content item-input no-padding-horizontal">
+                                        <div class="item-inner no-padding-horizontal">
+                                            <!-- "item-floating-label" class on item title -->
+                                            <div class="item-title item-floating-label">End Point</div>
+                                            <div class="item-input-wrap">
+                                                <input type="text" name="Enter end point">
+                                                <span class="input-clear-button"></span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="list no-margin bg-none">
+                                <ul class="no-border">
+                                    <li class="item-content item-input no-padding-horizontal item-input-with-value">
+                                        <div class="item-inner no-padding-horizontal">
+                                            <!-- "item-floating-label" class on item title -->
+                                            <div class="item-title item-floating-label">Select Date</div>
+                                            <div class="item-input-wrap">
+                                                <input type="date" name="Select Date">
+                                                <span class="input-clear-button"></span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="list no-margin bg-none">
+                                <ul class="no-border">
+                                    <li class="item-content item-input no-padding-horizontal item-input-with-value">
+                                        <div class="item-inner no-padding-horizontal">
+                                            <!-- "item-floating-label" class on item title -->
+                                            <div class="item-title item-floating-label">Number of Passanger</div>
+                                            <div class="item-input-wrap">
+                                                <select>
+                                                    <option selected>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                    <option>7</option>
+                                                    <option>8</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <br>
+                            <button type="button" class="button button-raised button-fill button-large button-round color-default popup-close" data-dismiss="modal">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/framework7.bundle.min.js"></script>
+
+    <script src="js/chartjs/Chart.min.js"></script>
+    <script src="js/chartjs/utils.js"></script>
+
+    <script src="js/routes.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
