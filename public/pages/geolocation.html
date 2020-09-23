@@ -1,4 +1,5 @@
-<div class="page page-homepage light" data-name="homepage">
+
+<div class="page page-homepage light">
     <div class="navbar">
         <div class="navbar-inner">
             <div class="left">
@@ -44,17 +45,42 @@
 
 
             <div class="block">
-                <h6 class="block-title" style="font-size: 15px; text-align: center;">Reset App Feature</h6>
+                <h6 class="block-title" style="font-size: 15px; text-align: center;">Geolocation Feature</h6>
                 <h6 style="font-size: 13px; text-align: center; margin-top: 0px;">WebViewGold</h6>
 
             </div>
             <div class="block">
+                <button class="button button-outline" onclick="getLocation()">Try It</button>
+
+                <p id="demo"></p>
                 <!-- <h6 class="block-title" style="font-size: 15px; text-align: center;">Reset App</h6> -->
-                <h6 style="font-size: 13px; text-align: center; margin-top: 0px;">Untuk mereset aplikasi menjadi factory setting dengan membersihkan semua cookies dan cache</h6>
-                <div class="block">
-                    <a href='reset://' class="button button-raised button-large button-fill link external">Reset App</a>
+                <h6 style="font-size: 13px; text-align: center; margin-top: 0px;"></h6>
+                <div class="modal-header border-0">
+                    <h5>Geolocation</h5>
+
                 </div>
-                
+
+                <div class="modal-body pt-0">
+
+                    <button id="btn1" type="submit" class="button button-outline" onclick="mbo()">Check Your
+                        Position</button>
+                    <div class="block" id="formatted-address"></div>
+                    <div class="block" id="geometry"></div><br>
+
+                    <form id="location-form">
+                        <h5>Search location</h5>
+                        <!-- <input type="text" id="location-input" class="form-control form-control-lg"> -->
+                        <input type="text" id="location-input" placeholder="Search Location">
+                        <br>
+                        <button type="submit" class="button button-outline">Submit</button>
+                    </form>
+                    <div class="block" id="formatted-address1"></div>
+                    <div class="block" id="geometry1"></div>
+
+
+
+                </div>
+
             </div>
 
 
@@ -64,3 +90,21 @@
 
 
 </div>
+
+<script src="js/geo.js"></script>
+<script>
+    var x = document.getElementById("demo");
+
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.watchPosition(showPosition);
+        } else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
+
+    function showPosition(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude +
+            "<br>Longitude: " + position.coords.longitude;
+    }
+</script>
