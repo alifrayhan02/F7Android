@@ -129,6 +129,10 @@ var routes = [
     url: './pages/geolocation.html',
   },
   {
+    path: '/iklan/',
+    url: './pages/iklan.html',
+  },
+  {
     path: '/upload/',
     url: './pages/upload.html',
   },
